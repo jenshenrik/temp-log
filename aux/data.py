@@ -44,4 +44,5 @@ def read_file(filename):
 def draw_line_graph(x_data, y_data):
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=x_data, y=y_data, mode="lines+markers"))
+    fig.update_yaxes(range=[5,15])
     fig.show()
